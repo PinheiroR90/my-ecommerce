@@ -3,6 +3,9 @@ package com.curso.mycommerce.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "tb_user")
 public class User {
@@ -14,6 +17,8 @@ public class User {
     private String phone;
     private LocalDate birthdate;
     private String password;
+    @OneToMany(mappedBy = "client")
+    private List<Order> orders = new ArrayList<>();
 
     public User(){
     }
@@ -72,5 +77,9 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
     }
 }
