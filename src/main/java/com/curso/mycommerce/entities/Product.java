@@ -3,6 +3,7 @@ package com.curso.mycommerce.entities;
 import jakarta.persistence.*;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -81,4 +82,7 @@ public class Product {
         return categories;
     }
 
+    public List<Order> getOrder(){
+        return items.stream().map(OrderItem::getOrder).toList();
+    }
 }
