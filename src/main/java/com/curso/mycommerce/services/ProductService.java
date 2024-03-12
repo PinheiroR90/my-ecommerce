@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,10 +44,11 @@ public class ProductService {
         product = productRepository.save(product);
         return new ProductDTO(product);
     }
-
-    public ProductDTO
-
     @Transactional
+    public void delete(Long id){
+        productRepository.deleteById(id);
+    }
+
     private void copyDtoForProduct(ProductDTO dto, Product product) {
         product.setName(dto.getName());
         product.setDescription(dto.getDescription());
