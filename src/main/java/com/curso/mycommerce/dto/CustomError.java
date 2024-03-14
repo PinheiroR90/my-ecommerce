@@ -8,7 +8,7 @@ public class CustomError {
   private String error;
   private  String path;
 
-  public CustomError(){}
+  //public CustomError(){}
     public CustomError(Instant timestamp, Integer status, String error, String path) {
         this.timestamp = timestamp;
         this.status = status;

@@ -1,11 +1,18 @@
 package com.curso.mycommerce.dto;
 
 import com.curso.mycommerce.entities.Product;
+import jakarta.validation.constraints.*;
 
 public class ProductDTO {
     private Long id;
+    @NotBlank(message = "Campo requerido")
+    @Size(min = 3, max = 45, message = "mais que 3, menor que 45")
     private String name;
+    @Size(min = 10 , message = "minimo 10 caracteres")
+    @NotBlank(message = "Campo requerido")
+
     private String description;
+    @Positive(message = "apenas valores positivo")
     private Double price;
     private  String imgUrl;
 
