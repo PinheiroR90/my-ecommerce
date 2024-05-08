@@ -1,18 +1,16 @@
 package com.curso.mycommerce.controllers.handlers;
 
 import com.curso.mycommerce.dto.CustomError;
-import com.curso.mycommerce.dto.FieldMessege;
 import com.curso.mycommerce.dto.ValidateError;
 import com.curso.mycommerce.services.exception.DatabaseException;
 import com.curso.mycommerce.services.exception.ExceptionNotFound;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver;
 
 import java.time.Instant;
 

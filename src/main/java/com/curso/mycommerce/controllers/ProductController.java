@@ -2,8 +2,7 @@ package com.curso.mycommerce.controllers;
 
 import com.curso.mycommerce.dto.ProductDTO;
 import com.curso.mycommerce.services.ProductService;
-import jakarta.servlet.ServletSecurityElement;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/products")

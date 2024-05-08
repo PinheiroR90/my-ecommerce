@@ -1,8 +1,6 @@
 package com.curso.mycommerce.entities;
 
-import jakarta.persistence.*;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.DialectOverride;
+import javax.persistence.*;
 
 import java.time.Instant;
 @Entity

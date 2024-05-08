@@ -1,7 +1,7 @@
 package com.curso.mycommerce.dto;
 
 import com.curso.mycommerce.entities.Product;
-import jakarta.validation.constraints.*;
+import javax.validation.constraints.*;
 
 public class ProductDTO {
     private Long id;

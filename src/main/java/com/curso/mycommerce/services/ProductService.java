@@ -5,7 +5,7 @@ import com.curso.mycommerce.entities.Product;
 import com.curso.mycommerce.repositories.ProductRepository;
 import com.curso.mycommerce.services.exception.DatabaseException;
 import com.curso.mycommerce.services.exception.ExceptionNotFound;
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;

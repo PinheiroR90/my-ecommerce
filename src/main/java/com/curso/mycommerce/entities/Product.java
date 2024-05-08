@@ -1,6 +1,6 @@
 package com.curso.mycommerce.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.util.HashSet;
 import java.util.List;
